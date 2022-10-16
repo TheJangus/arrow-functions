@@ -98,7 +98,7 @@ const newObject = array => ({
 });
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Hello from the new object function', newObject(['hi', 'hello', 'are you there?']));
+console.log('Hello from the new object function', newObject(['hi', 'hello', 'are you there?']));
 
 
 // STEP 10
@@ -113,7 +113,11 @@ let sum = function(a, b, c, d) {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sum(1, 2, 3, 4));
+console.log(sum(1, 2, 3, 4));
+
+const sumNew = (a, b, c, d) => `${a + b + c + d}`;
+
+console.log('new sum', sumNew(1, 2, 3, 4));
 
 
 let objectLit = function() {
@@ -125,8 +129,15 @@ let objectLit = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(objectLit());
+console.log(objectLit());
 
+const newObjectLit = array => ({
+    key1: 'value1',
+    key2: 'value2',
+    key3: 'value3',
+  });
+  
+  console.log(newObjectLit([]));
 
 let sumAndProduct = function(a, b) {
   let sum = a + b;
@@ -135,7 +146,20 @@ let sumAndProduct = function(a, b) {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sumAndProduct(3, 9));
+console.log(sumAndProduct(3, 9));
+
+const newSumAndProduct = (a, b) => `${a + b},${a * b}`;
+
+console.log(newSumAndProduct(3,9));
+
+//how do  iget above as an array...
+
+// const newSumAndProduct = array => ({
+//     firstValue: array[0],
+//     secondValue: array[1],
+//   });
+
+
 
 
 let message = function(name) {
@@ -143,7 +167,7 @@ let message = function(name) {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(message('Allie'));
+console.log(message('Allie'));
 
 
 let Student = function(name, age, hometown) {
